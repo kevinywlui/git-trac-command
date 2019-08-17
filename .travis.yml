@@ -3,6 +3,7 @@ language: python
 matrix:
     include:
         - python: 2.6
+          dist: trusty
           env:
               - TOXENV=py26
               - PIP_DEPS="virtualenv<16.0 tox<3.0"
@@ -11,6 +12,7 @@ matrix:
               - TOXENV=py27
               - PIP_DEPS="tox"
         - python: 3.3
+          dist: trusty
           env:
               - TOXENV=py33
               - PIP_DEPS="virtualenv<16.0 tox<3.0"
